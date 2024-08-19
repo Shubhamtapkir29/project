@@ -2,7 +2,7 @@ pipeline {
 agent {
 label {
 		label "built-in"
-		customWorkspace "/data/project-myapp"
+		customWorkspace "/mnt/project"
 		
 		}
 		}
@@ -22,7 +22,7 @@ label {
 		
 			steps {
 						
-						sh "mvn clean package"
+						sh "mvn clean install"
 			
 			}
 			
