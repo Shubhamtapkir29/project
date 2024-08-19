@@ -28,17 +28,7 @@ label {
 			
 		
 		}
-		
-		stage ('COPY_WAR_TO_Server'){
-		
-				steps {
-						
-						sh "scp -r target/LoginWebApp.war saccount@10.0.2.51:/data/project/wars"
-
-						}
-				
-				}
-	
+			
 	
 	
 	}
