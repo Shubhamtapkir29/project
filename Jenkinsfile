@@ -1,8 +1,8 @@
 pipeline {
 agent {
 label {
-		label "slave-1"
-		customWorkspace "/mnt/project-myapp"
+		label "built-in"
+		customWorkspace "/data/project-myapp"
 		
 		}
 		}
@@ -12,7 +12,7 @@ label {
 		stage ('CLEAN_OLD_M2') {
 			
 			steps {
-				sh "rm -rf /root/.m2/repository"
+				sh "rm -rf /home/saccount/.m2/repository"
 				
 			}
 			
